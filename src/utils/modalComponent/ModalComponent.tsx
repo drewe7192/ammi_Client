@@ -1,23 +1,19 @@
 import React, { useState } from "react";
-import "./ModalComponent.css";
+import styles from "./ModalComponent.module.scss";
 
 const ModalComponent = (props: any) => {
   const { buttonLabel, className, toggle, isActive } = props;
 
-  // const [modal, setModal] = useState(false);
-  // const toggle = () => setModal(!modal);
-
   return (
     <>
-      {/* <button onClick={toggle}>Open Modal</button> */}
       {isActive ? (
-        <div id="myModal" className="modal">
-          <div className="modal-content">
-            <div className="modal-header">
+        <div id="myModal" className={styles.modal}>
+          <div className={styles.modalContent}>
+            <div className={styles.modalHeader}>
               <h2>Modal Header</h2>
             </div>
-            <div className="modal-body">
-              <span onClick={toggle} className="close">
+            <div className={styles.modalBody}>
+              <span onClick={toggle} className={styles.close}>
                 &times;
               </span>
               <ul>
@@ -26,7 +22,7 @@ const ModalComponent = (props: any) => {
                 <h2>About</h2>
               </ul>
             </div>
-            <div className="modal-footer">
+            <div className={styles.modalFooter}>
               <h3>Modal Footer</h3>
             </div>
           </div>

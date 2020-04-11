@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./../../utils/Hamburger/MenuDropdownComponent.css";
+import styles from "./../../utils/Hamburger/MenuDropdownComponent.module.scss";
 import { HamburgerSpring } from "react-animated-burgers";
 import ModalComponent from "./../modalComponent/ModalComponent";
 
@@ -10,7 +10,7 @@ const MenuDropdownComponent = () => {
 
   return (
     <>
-      <div className="keyIWa">
+      <div className={styles.keyIWa}>
         <HamburgerSpring
           isActive={isActive}
           toggleButton={toggle}

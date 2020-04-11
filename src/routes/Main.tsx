@@ -1,15 +1,15 @@
 import React from "react";
 import MainGrid from "./../views/MainGrid/MainGrid";
-import "./Main.css";
+import "./Main.module.scss";
 import BackgroundVideo from "../utils/BackGroundVideo/BackgroundVideo";
-import "../utils/BackGroundVideo/BackgroundVideo.css";
+import styles from "../utils/BackGroundVideo/BackgroundVideo.module.scss";
 
 const Main = () => {
   return (
     <>
       {" "}
       <BackgroundVideo />{" "}
-      <div className="content">
+      <div className={styles.content}>
         <MainGrid />
       </div>
     </>

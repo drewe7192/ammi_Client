@@ -1,6 +1,6 @@
 import React from "react";
 import MenuDropdownComponent from "../../utils/Hamburger/MenuDropdownComponent.js";
-import "./HeaderGrid.css";
+import styles from "./HeaderGrid.module.scss";
 
 const HeaderGrid = () => {
   return (
@@ -17,11 +17,11 @@ const HeaderGrid = () => {
         >
           Ammi
         </div>
-        <div className="header" style={{ float: "right" }}>
-          <div className="Navbargrid-container">
-            <div className="NavVargrid-item">Tv</div>
-            <div className="NavVargrid-item">Manga</div>
-            <div className="NavVargrid-item">Movies</div>
+        <div className={styles.header} style={{ float: "right" }}>
+          <div className={styles.NavbargridContainer}>
+            <div className={styles.NavVargridItem}>Tv</div>
+            <div className={styles.NavVargridItem}>Manga</div>
+            <div className={styles.NavVargridItem}>Movies</div>
             <div>
               <MenuDropdownComponent />
             </div>

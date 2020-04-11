@@ -1,16 +1,16 @@
 import React from "react";
-import "./MainGrid.css";
+import styles from "./MainGrid.module.scss";
 import BodyContainer from "./../../containers/BodyContainer";
 import HeaderContainer from "./../../containers/HeaderContainer";
 
 const MainGrid = () => {
   return (
     <>
-      <div className="grid-container">
-        <div className="grid-item">
+      <div className={styles.gridContainer}>
+        <div className={styles.gridItem}>
           <HeaderContainer />
         </div>
-        <div className="grid-item">
+        <div className={styles.gridItem}>
           {" "}
           <BodyContainer />
         </div>

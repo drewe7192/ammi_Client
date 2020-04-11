@@ -1,13 +1,13 @@
 import React from "react";
-import "./BodyGrid.css";
-import "./../../utils/BackGroundVideo/BackgroundVideo.css";
+import styles from "./BodyGrid.module.scss";
+import "./../../utils/BackGroundVideo/BackgroundVideo.module.scss";
 import ModalComponent from "../../utils/modalComponent/ModalComponent";
 
 const BodyGrid = () => {
   return (
     <>
-      <div className="bodygrid-container">
-        <div className="bodygrid-item">
+      <div className={styles.bodygridContainer}>
+        <div className={styles.bodygridItem}>
           <hr style={{ width: "70%" }} />
           <div style={{ paddingTop: "4vh" }}>
             <div
@@ -28,19 +28,9 @@ const BodyGrid = () => {
             View
           </div>
         </div>
-        <div className="bodygrid-item"></div>
+        <div className={styles.bodygridItem}></div>
       </div>
-      <div className="footer">
-        {/* <div
-          style={{
-            fontSize: "2vh",
-
-            float: "left",
-            paddingLeft: "9vh",
-          }}
-        >
-          ayyyy
-        </div> */}
+      <div className={styles.footer}>
         <div
           style={{
             fontSize: "2vh",
