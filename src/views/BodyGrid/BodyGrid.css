@@ -1,0 +1,28 @@
+.bodygrid-container {
+  display: grid;
+  grid-template-columns: 30vw auto;
+  /* background-color: #2196f3; */
+  /* padding: 10px; */
+}
+.bodygrid-item {
+  font-size: 5vh;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.footer {
+  padding-bottom: 6vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: #a0530f; */
+  background: rgb(160, 83, 15);
+  background: linear-gradient(
+    0deg,
+    rgba(160, 83, 15, 0.1) 100%,
+    rgba(160, 83, 15, 0.1) 100%
+  );
+  color: white;
+  text-align: center;
+}
