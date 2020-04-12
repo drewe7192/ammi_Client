@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./DashBoardGrid.module.scss";
 import BodyContainer from "../../containers/BodyContainer";
 import HeaderContainer from "../../containers/HeaderContainer";
-import MenuDropdownComponent from "./../../utils/hamburger/MenuDropdownComponent";
+// import MenuDropdownComponent from "./../../utils/hamburger/MenuDropdownComponent";
 
 export const DashboardGridHeader = () => {
   return (
     <>
-      {" "}
+      {/* {" "}
       <div className="" style={{ marginTop: "7vh" }}>
         <div
           style={{
@@ -29,6 +29,11 @@ export const DashboardGridHeader = () => {
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className={styles.dashboardHeaderContainer}>
+        <div className={styles.dashboardHeaderItem}>1</div>
+        <div className={styles.dashboardHeaderItem}>2</div>
       </div>
     </>
   );
@@ -37,7 +42,7 @@ export const DashboardGridHeader = () => {
 export const DashboardGridBody = () => {
   return (
     <>
-      <div className={styles.bodygridContainer}>
+      {/* <div className={styles.bodygridContainer}>
         <div className={styles.bodygridItem}>
           <hr style={{ width: "70%" }} />
           <div style={{ paddingTop: "4vh" }}>
@@ -61,7 +66,8 @@ export const DashboardGridBody = () => {
         </div>
         <div className={styles.bodygridItem}></div>
       </div>
-      <div className={styles.footer}></div>
+      <div className={styles.footer}></div> */}
+      Hello world
     </>
   );
 };
@@ -71,11 +77,11 @@ export const DashBoardGridContainer = () => {
     <>
       <div className={styles.gridContainer}>
         <div className={styles.gridItem}>
-          <HeaderContainer gridType={"dashBoardGrid"} />
+          <HeaderContainer gridType="dashBoardGrid" />
         </div>
         <div className={styles.gridItem}>
           {" "}
-          <BodyContainer gridType={"dashBoardGrid"} />
+          <BodyContainer gridType="dashBoardGrid" />
         </div>
       </div>
     </>

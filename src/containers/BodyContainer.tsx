@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import { MainGridBody } from "./../views/mainGrid/MainGridContainer";
-import MenuDropdownComponent from "./../utils/modalComponent/ModalComponent";
-import styles from "./.module.scss";
+
+import { DashboardGridBody } from "./../views/dashboardGrid/DashBoardGridContainer";
 
 const whichGrid = (gridType: any) => {
   if ((gridType = "mainGrid")) {
     return (
       <>
         <MainGridBody />
+      </>
+    );
+  } else if ((gridType = "dashBoardGrid")) {
+    return (
+      <>
+        {" "}
+        <DashboardGridBody />{" "}
       </>
     );
   }
