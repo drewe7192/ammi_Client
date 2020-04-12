@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./../../utils/Hamburger/MenuDropdownComponent.module.scss";
+import styles from "./../../utils/hamburger/MenuDropdownComponent.module.scss";
 import { HamburgerSpring } from "react-animated-burgers";
 import ModalComponent from "./../modalComponent/ModalComponent";
 

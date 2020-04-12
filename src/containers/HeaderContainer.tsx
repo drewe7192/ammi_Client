@@ -1,13 +1,19 @@
 import React from "react";
-import HeaderGrid from "../views/HeaderGrid/HeaderGrid";
+import { MainGridHeader } from "./../views/mainGrid/MainGridContainer";
 
-const HeaderContainer = () => {
-  return (
-    <>
-      {" "}
-      <HeaderGrid />{" "}
-    </>
-  );
+const whichGrid = (gridType: any) => {
+  debugger;
+  if ((gridType = "mainGrid")) {
+    return (
+      <>
+        {" "}
+        <MainGridHeader />
+      </>
+    );
+  }
+};
+const HeaderContainer = (gridType: any) => {
+  return <>{whichGrid(gridType)}</>;
 };
 
 export default HeaderContainer;

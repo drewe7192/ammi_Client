@@ -1,19 +1,34 @@
-import React from "react";
-import MainGrid from "./../views/MainGrid/MainGrid";
+import React, { useState } from "react";
+import { MainGridContainer } from "../views/mainGrid/MainGridContainer";
+import { DashBoardGridContainer } from "../views/dashboardGrid/DashBoardGridContainer";
+import BackgroundVideo from "../utils/backgroundVideo/BackgroundVideo";
+import styles from "./../utils/backgroundVideo/BackgroundVideo.module.scss";
 import "./Main.module.scss";
-import BackgroundVideo from "../utils/BackGroundVideo/BackgroundVideo";
-import styles from "../utils/BackGroundVideo/BackgroundVideo.module.scss";
 
 const Main = () => {
-  return (
-    <>
-      {" "}
-      <BackgroundVideo />{" "}
-      <div className={styles.content}>
-        <MainGrid />
-      </div>
-    </>
-  );
+  const [whichGrid] = useState(true);
+
+  if (whichGrid) {
+    return (
+      <>
+        {" "}
+        <BackgroundVideo />{" "}
+        <div className={styles.content}>
+          <MainGridContainer />
+        </div>
+      </>
+    );
+  } else {
+    return (
+      <>
+        {" "}
+        <BackgroundVideo />{" "}
+        <div className={styles.content}>
+          <DashBoardGridContainer />
+        </div>
+      </>
+    );
+  }
 };
 
 export default Main;

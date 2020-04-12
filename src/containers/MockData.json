@@ -1,0 +1,18 @@
+{
+  "result": {
+    "Header": {
+      "Title": "Ammi",
+      "MenuItems": ["Tv", "Movies", "Manga", "Settings"],
+      "SubHeader": {},
+      "Body": {
+        "Frontnews": [
+          { "Title": {}, "SubTitle": {} },
+          { "Title": {}, "SubTitle": {} },
+          { "Title": {}, "SubTitle": {} },
+          { "Title": {}, "SubTitle": {} }
+        ],
+        "NewsFeed": [{}, {}, {}]
+      }
+    }
+  }
+}

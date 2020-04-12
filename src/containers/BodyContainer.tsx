@@ -1,15 +1,20 @@
 import React, { useState } from "react";
-import BodyGrid from "../views/BodyGrid/BodyGrid";
+import { MainGridBody } from "./../views/mainGrid/MainGridContainer";
+import MenuDropdownComponent from "./../utils/modalComponent/ModalComponent";
+import styles from "./.module.scss";
 
-const BodyContainer = () => {
-  return (
-    <>
-      <div>
-        {" "}
-        <BodyGrid />{" "}
-      </div>
-    </>
-  );
+const whichGrid = (gridType: any) => {
+  if ((gridType = "mainGrid")) {
+    return (
+      <>
+        <MainGridBody />
+      </>
+    );
+  }
+};
+
+const BodyContainer = (gridType: any) => {
+  return <>{whichGrid(gridType)}</>;
 };
 
 export default BodyContainer;
