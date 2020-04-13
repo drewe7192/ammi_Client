@@ -29,9 +29,6 @@ export const MainGridHeader = (props: any) => {
         <div className={styles.title}>Ammi</div>
         <div className={styles.header}>
           <div className={styles.NavbargridContainer}>
-            {/* <div className={styles.NavVargridItem}>TV</div>
-            <div className={styles.NavVargridItem}>Manga</div>
-            <div className={styles.NavVargridItem}>Movies</div> */}
             {MenuItems_map(array1)}
             <div>
               <MenuDropdownComponent menuItemsForHamburger={array2} />
