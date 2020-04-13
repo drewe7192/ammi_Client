@@ -1,23 +1,15 @@
 import React, { useState } from "react";
 import { MainGridBody } from "./../views/mainGrid/MainGridContainer";
-
 import { DashboardGridBody } from "./../views/dashboardGrid/DashBoardGridContainer";
 
-const whichGrid = (gridType: any) => {
-  if ((gridType = "mainGrid")) {
-    return (
-      <>
-        <MainGridBody />
-      </>
-    );
-  } else if ((gridType = "dashBoardGrid")) {
-    return (
-      <>
-        {" "}
-        <DashboardGridBody />{" "}
-      </>
-    );
+const whichGrid = (props: any) => {
+  var displayGrid;
+  if (props.gridType == "dashBoardGrid") {
+    displayGrid = <DashboardGridBody />;
+  } else if (props.gridType == "mainGrid") {
+    displayGrid = <MainGridBody />;
   }
+  return <>{displayGrid} </>;
 };
 
 const BodyContainer = (gridType: any) => {

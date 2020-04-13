@@ -10,21 +10,26 @@
     rgba(160, 83, 15, 0.8) 100%,
     rgba(160, 83, 15, 0.8) 100%
   );
-  /* padding: 10px; */
 }
 .gridItem {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
   padding: 20px;
   font-size: 4vh;
   text-align: center;
 }
 
+.mainGridHeader {
+  margin-top: 7vh;
+}
+
+.title {
+  float: left;
+  padding-left: 5vw;
+  color: white;
+  padding-top: 2vh;
+}
 .bodyGridContainer {
   display: grid;
   grid-template-columns: 30vw auto;
-  /* background-color: #2196f3; */
-  /* padding: 10px; */
 }
 .bodyGridItem {
   font-size: 5vh;
@@ -38,7 +43,6 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  /* background-color: #a0530f; */
   background: rgb(160, 83, 15);
   background: linear-gradient(
     0deg,
@@ -52,20 +56,16 @@
 .header {
   font-size: 2.8vh;
   word-spacing: 4vw;
-  /* padding-top: 2vh; */
   padding-right: 10vh;
+  float: right;
 }
 
 .NavbargridContainer {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  /* background-color: #2196f3; */
   padding: 10px;
 }
 .NavVargridItem {
-  /* background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8); */
   padding: 20px;
-  /* font-size: 30px; */
   text-align: center;
 }

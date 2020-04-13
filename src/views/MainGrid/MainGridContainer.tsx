@@ -1,31 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./MainGrid.module.scss";
 import BodyContainer from "../../containers/BodyContainer";
 import HeaderContainer from "../../containers/HeaderContainer";
-import MenuDropdownComponent from "../../utils/hamburger/MenuDropdownComponent.js";
+import MenuDropdownComponent from "./../../utils/hamburger/MenuDropdownComponent";
 
-export const MainGridHeader = () => {
+const MenuItems_map = (array1: any) => {
+  let test3;
+  test3 = array1.map((i: any) => {
+    return (
+      <>
+        <div className={styles.NavVargridItem}>{i}</div>
+      </>
+    );
+  });
+
+  return test3;
+};
+export const MainGridHeader = (props: any) => {
+  let chuck = 3;
+
+  let array1 = props.menuItems.slice(0, chuck);
+  let array2 = props.menuItems.slice(chuck, chuck + props.menuItems.length);
+
   return (
     <>
       {" "}
-      <div className="" style={{ marginTop: "7vh" }}>
-        <div
-          style={{
-            float: "left",
-            paddingLeft: "5vw",
-            color: "white",
-            paddingTop: "2vh",
-          }}
-        >
-          Ammi
-        </div>
-        <div className={styles.header} style={{ float: "right" }}>
+      <div className={styles.mainGridHeader}>
+        <div className={styles.title}>Ammi</div>
+        <div className={styles.header}>
           <div className={styles.NavbargridContainer}>
-            <div className={styles.NavVargridItem}>Tv</div>
+            {/* <div className={styles.NavVargridItem}>TV</div>
             <div className={styles.NavVargridItem}>Manga</div>
-            <div className={styles.NavVargridItem}>Movies</div>
+            <div className={styles.NavVargridItem}>Movies</div> */}
+            {MenuItems_map(array1)}
             <div>
-              <MenuDropdownComponent />
+              <MenuDropdownComponent menuItemsForHamburger={array2} />
             </div>
           </div>
         </div>

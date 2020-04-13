@@ -3,7 +3,9 @@ import styles from "./../../utils/hamburger/MenuDropdownComponent.module.scss";
 import { HamburgerSpring } from "react-animated-burgers";
 import ModalComponent from "./../modalComponent/ModalComponent";
 
-const MenuDropdownComponent = () => {
+const MenuDropdownComponent = (props) => {
+  debugger;
+  const { buttonLabel, className, menuItemsForHamburger } = props;
   const [isActive, setIsActive] = useState(false);
 
   const toggle = () => setIsActive(!isActive);
@@ -25,7 +27,11 @@ const MenuDropdownComponent = () => {
           barColor="white"
         />
       </div>
-      <ModalComponent toggle={toggle} isActive={isActive} />
+      <ModalComponent
+        toggle={toggle}
+        isActive={isActive}
+        menuItemsForHamburger={menuItemsForHamburger}
+      />
     </>
   );
 };

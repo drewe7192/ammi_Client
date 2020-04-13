@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import styles from "./ModalComponent.module.scss";
 
 const ModalComponent = (props: any) => {
-  const { buttonLabel, className, toggle, isActive } = props;
+  debugger;
+  const {
+    buttonLabel,
+    className,
+    toggle,
+    isActive,
+    menuItemsForHamburger,
+  } = props;
 
   return (
     <>
@@ -17,9 +24,9 @@ const ModalComponent = (props: any) => {
                 &times;
               </span>
               <ul>
-                <h2>Login</h2>
-                <h2>Settings</h2>
-                <h2>About</h2>
+                {menuItemsForHamburger.map((i: any) => {
+                  return <h2>{i}</h2>;
+                })}
               </ul>
             </div>
             <div className={styles.modalFooter}>

@@ -7,30 +7,6 @@ import HeaderContainer from "../../containers/HeaderContainer";
 export const DashboardGridHeader = () => {
   return (
     <>
-      {/* {" "}
-      <div className="" style={{ marginTop: "7vh" }}>
-        <div
-          style={{
-            float: "left",
-            paddingLeft: "5vw",
-            color: "white",
-            paddingTop: "2vh",
-          }}
-        >
-          Ammi
-        </div>
-        <div className={styles.header} style={{ float: "right" }}>
-          <div className={styles.NavbargridContainer}>
-            <div className={styles.NavVargridItem}>Tv</div>
-            <div className={styles.NavVargridItem}>Manga</div>
-            <div className={styles.NavVargridItem}>Movies</div>
-            <div>
-              <MenuDropdownComponent />
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <div className={styles.dashboardHeaderContainer}>
         <div className={styles.dashboardHeaderItem}>1</div>
         <div className={styles.dashboardHeaderItem}>2</div>
@@ -42,32 +18,12 @@ export const DashboardGridHeader = () => {
 export const DashboardGridBody = () => {
   return (
     <>
-      {/* <div className={styles.bodygridContainer}>
-        <div className={styles.bodygridItem}>
-          <hr style={{ width: "70%" }} />
-          <div style={{ paddingTop: "4vh" }}>
-            <div
-              style={{ fontSize: "7vh", color: "black", fontWeight: "bold" }}
-            >
-              The New 2020 Anime Spring Priview Guide{" "}
-            </div>
-            Check everyday for fresh takes about this seasons upcoming shows.
-          </div>
-          <div
-            style={{
-              fontSize: "2vh",
-              paddingTop: "9vh",
-              float: "left",
-              paddingLeft: "9vh",
-            }}
-          >
-            View
-          </div>
+      {" "}
+      <div className={styles.bodyGridContainer}>
+        <div className={styles.bodyGridItem}>
+          ayyy this is where the news feed going{" "}
         </div>
-        <div className={styles.bodygridItem}></div>
       </div>
-      <div className={styles.footer}></div> */}
-      Hello world
     </>
   );
 };

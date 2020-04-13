@@ -6,7 +6,7 @@ import styles from "./../utils/backgroundVideo/BackgroundVideo.module.scss";
 import "./Main.module.scss";
 
 const Main = () => {
-  const [whichGrid] = useState(false);
+  const [whichGrid] = useState(true);
 
   if (whichGrid) {
     return (
