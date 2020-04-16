@@ -1,8 +1,7 @@
 .gridContainer {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 20vh 80vh;
-
+  grid-template-rows: 15vh 85vh;
   background-color: #a0530f;
   background: rgb(160, 83, 15);
   background: linear-gradient(
@@ -10,12 +9,8 @@
     rgba(160, 83, 15, 0.8) 100%,
     rgba(160, 83, 15, 0.8) 100%
   );
-  /* padding: 10px; */
 }
 .gridItem {
-  /* background-color: rgba(255, 255, 255, 0.8); */
-  /* border: 1px solid rgba(0, 0, 0, 0.8); */
-  // padding: 20px;
   font-size: 4vh;
   text-align: center;
 }
@@ -23,13 +18,9 @@
 .bodyGridContainer {
   display: grid;
   grid-template-columns: auto auto;
-  /* background-color: #2196f3; */
-  /* padding: 10px; */
 }
 .bodyGridItem {
-  // font-size: 5vh;
   text-align: center;
-  // margin-top: 3vh;
 }
 
 .footer {
@@ -38,7 +29,6 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  /* background-color: #a0530f; */
   background: rgb(160, 83, 15);
   background: linear-gradient(
     0deg,
@@ -52,21 +42,16 @@
 .header {
   font-size: 2.8vh;
   word-spacing: 4vw;
-  /* padding-top: 2vh; */
   padding-right: 10vh;
 }
 
 .NavbargridContainer {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  /* background-color: #2196f3; */
-  padding: 10px;
+  grid-template-rows: 10vh;
 }
-.NavVargridItem {
-  /* background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8); */
-  padding: 20px;
-  /* font-size: 30px; */
+.NavbargridItem {
+  padding: 1vh;
   text-align: center;
 }
 
@@ -75,18 +60,17 @@
   grid-template-columns: auto;
   grid-template-rows: 8vh 8vh;
 }
-.dashboardHeaderItem {
+.dashboardHeader {
+  display: grid;
+  grid-template-columns: 33.3vw 33.3vw 33.3vw;
+  grid-template-rows: 8vh;
   background-color: #9b470f;
-  // background-color: rgba(255, 255, 255, 0.8);
-  // border: 1px solid rgba(0, 0, 0, 0.8);
   font-size: 3vh 3vw;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.dashboardHeaderItem2 {
+.dashboardSubheader {
   background-color: rgb(32, 32, 32);
-  // background-color: rgba(255, 255, 255, 0.8);
-  // border: 1px solid rgba(0, 0, 0, 0.8);
   font-size: 3vh 3vw;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -95,7 +79,6 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  // width: 50vh;
   padding: 2vh;
 }
 
@@ -105,4 +88,21 @@
 
 .cardContainer {
   padding: 2px 16px;
+}
+.dashboardHeaderSection {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 1vh;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.dashboardHeaderSection input[type="search"] {
+  padding: 2vh;
+  width: 25vw;
+  height: 5vh;
+  border: none;
+  font-size: 3vh 3vw;
+  border-radius: 20px;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

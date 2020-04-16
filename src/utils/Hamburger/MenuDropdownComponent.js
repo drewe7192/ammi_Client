@@ -4,7 +4,6 @@ import { HamburgerSpring } from "react-animated-burgers";
 import ModalComponent from "./../modalComponent/ModalComponent";
 
 const MenuDropdownComponent = (props) => {
-  debugger;
   const { buttonLabel, className, menuItemsForHamburger } = props;
   const [isActive, setIsActive] = useState(false);
 
@@ -14,6 +13,7 @@ const MenuDropdownComponent = (props) => {
     <>
       <div className={styles.keyIWa}>
         <HamburgerSpring
+          className={styles.gCByfN}
           isActive={isActive}
           toggleButton={toggle}
           buttonColor="  background: rgb(160, 83, 15);

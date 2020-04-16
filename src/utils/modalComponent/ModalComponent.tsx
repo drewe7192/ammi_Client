@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./ModalComponent.module.scss";
 
 const ModalComponent = (props: any) => {
-  debugger;
   const {
     buttonLabel,
     className,

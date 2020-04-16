@@ -6,7 +6,9 @@ import mockData from "./MockData.json";
 const whichGrid = (props: any) => {
   var displayGrid;
   if (props.gridType == "dashBoardGrid") {
-    displayGrid = <DashboardGridHeader />;
+    displayGrid = (
+      <DashboardGridHeader menuItems={mockData.results.Header.MenuItems} />
+    );
   } else if (props.gridType == "mainGrid") {
     displayGrid = (
       <MainGridHeader menuItems={mockData.results.Header.MenuItems} />
