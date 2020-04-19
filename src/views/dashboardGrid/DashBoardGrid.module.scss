@@ -1,7 +1,7 @@
 .gridContainer {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 15vh 85vh;
+  grid-template-rows: 16vh 84vh;
   background-color: #a0530f;
   background: rgb(160, 83, 15);
   background: linear-gradient(
@@ -21,6 +21,7 @@
 }
 .bodyGridItem {
   text-align: center;
+  background-color: white;
 }
 
 .footer {
@@ -62,7 +63,7 @@
 }
 .dashboardHeader {
   display: grid;
-  grid-template-columns: 33.3vw 33.3vw 33.3vw;
+  grid-template-columns: 20.3vw 47.3vw 33.3vw;
   grid-template-rows: 8vh;
   background-color: #9b470f;
   font-size: 3vh 3vw;
@@ -70,6 +71,9 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .dashboardSubheader {
+  display: grid;
+  grid-template-columns: 20.3vw 47.3vw 33.3vw;
+  grid-template-rows: 8vh;
   background-color: rgb(32, 32, 32);
   font-size: 3vh 3vw;
   text-align: center;
@@ -79,7 +83,9 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  padding: 2vh;
+  display: grid;
+  grid-template-columns: 25vw 26vw;
+  grid-template-rows: 40vh;
 }
 
 .card:hover {
@@ -90,7 +96,6 @@
   padding: 2px 16px;
 }
 .dashboardHeaderSection {
-  border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 1vh;
   font-size: 3vh;
   text-align: center;
@@ -98,11 +103,45 @@
 
 .dashboardHeaderSection input[type="search"] {
   padding: 2vh;
-  width: 25vw;
+  width: 46vw;
   height: 5vh;
   border: none;
   font-size: 3vh 3vw;
   border-radius: 20px;
   outline: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.SubHeaderGridItem2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 5vh;
+  // padding: 2vh;
+}
+
+.SubHeaderGridItem input[type="search"] {
+  padding: 1vh;
+  width: 20vw;
+  height: 5vh;
+  border: none;
+  font-size: 3vh 3vw;
+  border-radius: 20px;
+  outline: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 2vh;
+}
+
+.SubHeaderGridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 8vh;
+}
+.SubHeaderGridItem {
+  text-align: center;
+}
+
+.SubHeaderMiddleItem {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 4vh 4vh;
 }

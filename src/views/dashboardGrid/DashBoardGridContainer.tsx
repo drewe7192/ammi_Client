@@ -40,15 +40,17 @@ export const DashboardGridHeader = (props: any) => {
             >
               Ammi
             </div>
-            <img
-              src={svg}
-              style={{
-                width: "4vw",
-                height: "6vh",
-              }}
-            ></img>
-            <img src={svg2} style={{ width: "4vw", height: "6vh" }}></img>
-            <img src={svg3} style={{ width: "4vw", height: "6vh" }}></img>
+            <div style={{ padding: "1vh" }}>
+              <img
+                src={svg}
+                style={{
+                  width: "4vw",
+                  height: "4vh",
+                }}
+              ></img>
+              <img src={svg2} style={{ width: "4vw", height: "4vh" }}></img>
+              <img src={svg3} style={{ width: "4vw", height: "4vh" }}></img>
+            </div>
           </div>
           <div className={styles.dashboardHeaderSection}>
             <input
@@ -65,18 +67,51 @@ export const DashboardGridHeader = (props: any) => {
             </div>
           </div>
         </div>
-
         <div className={styles.dashboardSubheader}>
-          <div style={{ float: "left" }}>View All(4)...Close friends</div>
-
-          <div style={{ float: "right" }}>
-            Status{" "}
+          <div
+            className={styles.SubHeaderGridItem}
+            style={{ paddingTop: "1vh" }}
+          >
+            Ko'niciwa Samantha
+          </div>
+          <div
+            className={styles.SubHeaderGridItem2}
+            style={{ fontSize: "2.3vh" }}
+          >
+            <div className={styles.SubHeaderMiddleItem}>
+              <div style={{ fontSize: "4vh", color: "orange" }}>17</div>
+              <div>Mangas Read</div>
+            </div>
+            <div className={styles.SubHeaderMiddleItem}>
+              <div style={{ fontSize: "4vh", color: "orange" }}>10</div>
+              <div>Shows Watched</div>
+            </div>
+            <div className={styles.SubHeaderMiddleItem}>
+              <div style={{ fontSize: "4vh", color: "orange" }}>3</div>
+              <div>Movies viewed</div>
+            </div>
+            <div className={styles.SubHeaderMiddleItem}>
+              <div style={{ fontSize: "4vh", color: "orange" }}>#</div>
+              <div>AttackonTitan</div>
+            </div>
+            <div className={styles.SubHeaderMiddleItem}>
+              {" "}
+              <div style={{ fontSize: "4vh", color: "orange" }}>#</div>
+              <div>Bleach</div>
+            </div>
+          </div>
+          <div
+            style={{ paddingTop: ".5vh" }}
+            className={styles.SubHeaderGridItem}
+          >
+            {/* <div style={{ paddingTop: "1vh", fontSize: "1vh" }}> Status:</div> */}
+            Status:
             <input
-              type="text"
+              type="search"
               id="myInput"
-              placeholder="Search for names.."
+              placeholder="Search for Anime..."
               title="Type in a name"
-            ></input>{" "}
+            ></input>
           </div>
         </div>
       </div>
@@ -87,15 +122,43 @@ export const DashboardGridHeader = (props: any) => {
 export const DashboardGridBody = () => {
   return (
     <>
-      {/* <div className={styles.bodyGridContainer}>
+      <div className={styles.bodyGridContainer}>
         <div className={styles.bodyGridItem}>
           <div className={styles.card}>
-            <img
-              src={img}
-              alt="Avatar"
-              style={{ width: "10vw", height: "20vh" }}
-            />
-            <div className={styles.cardContainer}>
+            <div>
+              <img
+                src={img}
+                alt="Avatar"
+                style={{ width: "25vw", height: "40vh" }}
+              />
+            </div>
+
+            <div
+              className={styles.cardContainer}
+              style={{ backgroundColor: "#9b470f" }}
+            >
+              <h4>
+                <b>John Doe</b>
+              </h4>
+              <p>Architect & Engineer</p>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.bodyGridItem}>
+          <div className={styles.card}>
+            <div>
+              <img
+                src={img}
+                alt="Avatar"
+                style={{ width: "25vw", height: "40vh" }}
+              />
+            </div>
+
+            <div
+              className={styles.cardContainer}
+              style={{ backgroundColor: "#9b470f" }}
+            >
               <h4>
                 <b>John Doe</b>
               </h4>
@@ -105,12 +168,18 @@ export const DashboardGridBody = () => {
         </div>
         <div className={styles.bodyGridItem}>
           <div className={styles.card}>
-            <img
-              src={img}
-              alt="Avatar"
-              style={{ width: "10vw", height: "20vh" }}
-            />
-            <div className={styles.cardContainer}>
+            <div>
+              <img
+                src={img}
+                alt="Avatar"
+                style={{ width: "25vw", height: "40vh" }}
+              />
+            </div>
+
+            <div
+              className={styles.cardContainer}
+              style={{ backgroundColor: "#9b470f" }}
+            >
               <h4>
                 <b>John Doe</b>
               </h4>
@@ -120,12 +189,18 @@ export const DashboardGridBody = () => {
         </div>
         <div className={styles.bodyGridItem}>
           <div className={styles.card}>
-            <img
-              src={img}
-              alt="Avatar"
-              style={{ width: "10vw", height: "20vh" }}
-            />
-            <div className={styles.cardContainer}>
+            <div>
+              <img
+                src={img}
+                alt="Avatar"
+                style={{ width: "25vw", height: "40vh" }}
+              />
+            </div>
+
+            <div
+              className={styles.cardContainer}
+              style={{ backgroundColor: "#9b470f" }}
+            >
               <h4>
                 <b>John Doe</b>
               </h4>
@@ -135,12 +210,18 @@ export const DashboardGridBody = () => {
         </div>
         <div className={styles.bodyGridItem}>
           <div className={styles.card}>
-            <img
-              src={img}
-              alt="Avatar"
-              style={{ width: "10vw", height: "20vh" }}
-            />
-            <div className={styles.cardContainer}>
+            <div>
+              <img
+                src={img}
+                alt="Avatar"
+                style={{ width: "25vw", height: "40vh" }}
+              />
+            </div>
+
+            <div
+              className={styles.cardContainer}
+              style={{ backgroundColor: "#9b470f" }}
+            >
               <h4>
                 <b>John Doe</b>
               </h4>
@@ -150,12 +231,18 @@ export const DashboardGridBody = () => {
         </div>
         <div className={styles.bodyGridItem}>
           <div className={styles.card}>
-            <img
-              src={img}
-              alt="Avatar"
-              style={{ width: "10vw", height: "20vh" }}
-            />
-            <div className={styles.cardContainer}>
+            <div>
+              <img
+                src={img}
+                alt="Avatar"
+                style={{ width: "25vw", height: "40vh" }}
+              />
+            </div>
+
+            <div
+              className={styles.cardContainer}
+              style={{ backgroundColor: "#9b470f" }}
+            >
               <h4>
                 <b>John Doe</b>
               </h4>
@@ -163,37 +250,7 @@ export const DashboardGridBody = () => {
             </div>
           </div>
         </div>
-        <div className={styles.bodyGridItem}>
-          <div className={styles.card}>
-            <img
-              src={img}
-              alt="Avatar"
-              style={{ width: "10vw", height: "20vh" }}
-            />
-            <div className={styles.cardContainer}>
-              <h4>
-                <b>John Doe</b>
-              </h4>
-              <p>Architect & Engineer</p>
-            </div>
-          </div>
-        </div>
-        <div className={styles.bodyGridItem}>
-          <div className={styles.card}>
-            <img
-              src={img}
-              alt="Avatar"
-              style={{ width: "10vw", height: "20vh" }}
-            />
-            <div className={styles.cardContainer}>
-              <h4>
-                <b>John Doe</b>
-              </h4>
-              <p>Architect & Engineer</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
+      </div>
     </>
   );
 };
