@@ -2,24 +2,64 @@
   "results": {
     "Header": {
       "Title": "Ammi",
-      "MenuItems": [
-        "Tv",
-        "Movies",
-        "Manga",
-        "Login",
-        "Settings",
-        "another one"
+      "MenuItems": ["Tv", "Movies", "Manga", "Login", "Settings", "another one"]
+    },
+    "SubHeader": {
+      "UserName": "Samantha",
+      "MangasRead": "",
+      "ShowsWatched": "",
+      "MoviesViewed": "",
+      "Hashtags": ["AttackonTitan", "Bleach"]
+    },
+    "Body": {
+      "Frontnews": [
+        { "Title": {}, "SubTitle": {} },
+        { "Title": {}, "SubTitle": {} },
+        { "Title": {}, "SubTitle": {} },
+        { "Title": {}, "SubTitle": {} }
       ],
-      "SubHeader": {},
-      "Body": {
-        "Frontnews": [
-          { "Title": {}, "SubTitle": {} },
-          { "Title": {}, "SubTitle": {} },
-          { "Title": {}, "SubTitle": {} },
-          { "Title": {}, "SubTitle": {} }
-        ],
-        "NewsFeed": [{}, {}, {}]
-      }
+      "NewsFeed": [
+        {
+          "Title": "Drew Robles",
+          "Subtitle": "Posted on your wall",
+          "Picture": ""
+        },
+        {
+          "Title": "Drew Robles",
+          "Subtitle": "Posted on your wall",
+          "Picture": ""
+        },
+        {
+          "Title": "Drew Robles",
+          "Subtitle": "Posted on your wall",
+          "Picture": ""
+        },
+        {
+          "Title": "Drew Robles",
+          "Subtitle": "Posted on your wall",
+          "Picture": ""
+        },
+        {
+          "Title": "Drew Robles",
+          "Subtitle": "Posted on your wall",
+          "Picture": ""
+        },
+        {
+          "Title": "Drew Robles",
+          "Subtitle": "Posted on your wall",
+          "Picture": ""
+        },
+        {
+          "Title": "Drew Robles",
+          "Subtitle": "Posted on your wall",
+          "Picture": ""
+        },
+        {
+          "Title": "Drew Robles",
+          "Subtitle": "Posted on your wall",
+          "Picture": ""
+        }
+      ]
     }
   }
 }

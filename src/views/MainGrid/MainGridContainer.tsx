@@ -3,24 +3,16 @@ import styles from "./MainGrid.module.scss";
 import BodyContainer from "../../containers/BodyContainer";
 import HeaderContainer from "../../containers/HeaderContainer";
 import MenuDropdownComponent from "./../../utils/hamburger/MenuDropdownComponent";
+import Mapping from "./../../utils/mapping/Mapping";
 
-const MenuItems_map = (array1: any) => {
-  let test3;
-  test3 = array1.map((i: any) => {
-    return (
-      <>
-        <div className={styles.NavVargridItem}>{i}</div>
-      </>
-    );
-  });
-
-  return test3;
-};
 export const MainGridHeader = (props: any) => {
   let chuck = 3;
 
-  let array1 = props.menuItems.slice(0, chuck);
-  let array2 = props.menuItems.slice(chuck, chuck + props.menuItems.length);
+  let frontItems = props.menuItems.slice(0, chuck);
+  let hamburgerItems = props.menuItems.slice(
+    chuck,
+    chuck + props.menuItems.length
+  );
 
   return (
     <>
@@ -29,9 +21,9 @@ export const MainGridHeader = (props: any) => {
         <div className={styles.title}>Ammi</div>
         <div className={styles.header}>
           <div className={styles.NavbargridContainer}>
-            {MenuItems_map(array1)}
+            <Mapping menuItems={frontItems} />
             <div>
-              <MenuDropdownComponent menuItemsForHamburger={array2} />
+              <MenuDropdownComponent menuItemsForHamburger={hamburgerItems} />
             </div>
           </div>
         </div>
