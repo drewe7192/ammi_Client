@@ -18,7 +18,7 @@ export const MainGridHeader = (props: any) => {
     <>
       {" "}
       <div className={styles.mainGridHeader}>
-        <div className={styles.title}>Ammi</div>
+        <div className={`${styles.title} animeFont`}>Ammi</div>
         <div className={styles.header}>
           <div className={styles.NavbargridContainer}>
             <Mapping menuItems={frontItems} />
@@ -39,9 +39,7 @@ export const MainGridBody = () => {
         <div className={styles.bodyGridItem}>
           <hr style={{ width: "70%" }} />
           <div style={{ paddingTop: "4vh" }}>
-            <div
-              style={{ fontSize: "7vh", color: "black", fontWeight: "bold" }}
-            >
+            <div style={{ fontSize: "7vh", color: "black", fontWeight: "bold" }} className="animeFont">
               The New 2020 Anime Spring Priview Guide{" "}
             </div>
             Check everyday for fresh takes about this seasons upcoming shows.

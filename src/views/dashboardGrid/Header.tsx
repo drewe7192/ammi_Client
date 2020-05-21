@@ -17,6 +17,7 @@ const Header:FC<IHeaderProps> = (props: IHeaderProps) => {
     <div className={styles.dashboardHeader}>
       <div className={styles.dashboardHeaderSection}>
         <div
+          className="animeFont"
           style={{
             float: "left",
             fontSize: "4vh",

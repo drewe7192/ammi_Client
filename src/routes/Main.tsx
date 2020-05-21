@@ -11,19 +11,21 @@ import Video from "./../videos/test1.mp4"
 // import DevsVideo from "./../videos/Devs.mp4"
 
 const Main = () => {
+
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
     }, 3000)
   })
-  const [whichGrid, setWhichGrid] = useState(false);
+
+
+  const [whichGrid, setWhichGrid] = useState(true);
   console.dir(typeof setWhichGrid)
   const [isLoading, setIsLoading] = useState(true)
 
-  // is this like a Route type thing???
   return <Loader isLoading={isLoading} isTinted={true}>
-    {whichGrid ? <BackgroundVideo src={Video} isFullScreen={false}/> : null}
-    <div className='content'>
+    {whichGrid ? <BackgroundVideo isMuted={true} isControlVisible={false} isLooped={true} src={Video} isFullScreen={true}/> : null}
+    <div className='absolute content fullDim'>
       {whichGrid ? <MainGridContainer/> : <DashBoardGridContainer />}
     </div>
   </Loader>
