@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, createRef, useEffect } from 'react'
+import React, { FC, ReactNode, createRef, useEffect, useState } from 'react'
 import { Spinner } from 'spin.js'
 
 interface ILoaderProps 
@@ -11,10 +11,17 @@ export const Loader:FC<ILoaderProps> = (props: ILoaderProps) => {
     const spanRef = createRef<HTMLSpanElement>()
     let _SpinnerInstance:Spinner|null = null
 
+    const [hasMounted, setHasMounted] = useState(false)
+
     useEffect(() => {
         const _htmlSpanReference = spanRef.current
-        if(typeof _htmlSpanReference === 'object' && _htmlSpanReference !== null) {
-            _SpinnerInstance = new Spinner(
+
+        if(hasMounted === false) 
+        {
+            setHasMounted(true)
+            if(typeof _htmlSpanReference === 'object' && _htmlSpanReference !== null) {
+                // eslint-disable-next-line react-hooks/exhaustive-deps
+                _SpinnerInstance = new Spinner(
                 {
                     lines: 13, // The number of lines to draw
                     length: 38, // The length of each line
@@ -35,7 +42,8 @@ export const Loader:FC<ILoaderProps> = (props: ILoaderProps) => {
                     shadow: '0 0 1px transparent', // Box-shadow for the lines
                     position: 'absolute' // Element positioning
                 })
-            _SpinnerInstance.spin(_htmlSpanReference)
+                _SpinnerInstance.spin(_htmlSpanReference)
+        }
         }
         return () => {
             _SpinnerInstance = null

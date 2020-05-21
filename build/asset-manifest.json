@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bdbefa02.chunk.css",
+    "main.js": "/static/js/main.abb9fa04.chunk.js",
+    "main.js.map": "/static/js/main.abb9fa04.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e3141947.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e3141947.js.map",
+    "static/js/2.fae077f6.chunk.js": "/static/js/2.fae077f6.chunk.js",
+    "static/js/2.fae077f6.chunk.js.map": "/static/js/2.fae077f6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.97e3a8a874de86b0d40b818801d5335f.js": "/precache-manifest.97e3a8a874de86b0d40b818801d5335f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.bdbefa02.chunk.css.map": "/static/css/main.bdbefa02.chunk.css.map",
+    "static/js/2.fae077f6.chunk.js.LICENSE.txt": "/static/js/2.fae077f6.chunk.js.LICENSE.txt",
+    "static/media/77_Essential_Icons_Comment Lines.svg": "/static/media/77_Essential_Icons_Comment Lines.5001510c.svg",
+    "static/media/77_Essential_Icons_Notification.svg": "/static/media/77_Essential_Icons_Notification.daeccde9.svg",
+    "static/media/77_Essential_Icons_Users.svg": "/static/media/77_Essential_Icons_Users.937fec69.svg",
+    "static/media/fight2.png": "/static/media/fight2.a6c6c606.png",
+    "static/media/fight3.jpg": "/static/media/fight3.d1fb10b9.jpg",
+    "static/media/fight4.jpg": "/static/media/fight4.db67e776.jpg",
+    "static/media/naruto1.jpg": "/static/media/naruto1.f3fc168e.jpg",
+    "static/media/test1.mp4": "/static/media/test1.6ad833d3.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3141947.js",
+    "static/js/2.fae077f6.chunk.js",
+    "static/css/main.bdbefa02.chunk.css",
+    "static/js/main.abb9fa04.chunk.js"
+  ]
+}
