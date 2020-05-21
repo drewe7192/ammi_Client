@@ -4,6 +4,7 @@
 
 html,
 body,
+.fullDim,
 #root {
   margin: 0;
   padding: 0;
@@ -23,4 +24,25 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.Loader {
+  position: absolute;
+  z-index: 1;
+}
+.tinted {
+  background: #333333d6
+}
+
+.flex {
+  display: flex;
+}
+.flex.centered {
+  justify-content: center;
+  align-items: center;
+}
+.flex > .flex-item
+{
+  flex: 1;
 }

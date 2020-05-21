@@ -4,12 +4,18 @@ import BodyContainer from "../../containers/BodyContainer";
 import HeaderContainer from "../../containers/HeaderContainer";
 // import img from "./../../pictures/img_avatar.png";
 import img2 from "./../../pictures/naruto1.jpg";
-// import img3 from "./../../pictures/fight2.png";
-// import img4 from "./../../pictures/fight3.jpg";
-// import img5 from "./../../pictures/fight4.jpg";
+import img3 from "./../../pictures/fight2.png";
+import img4 from "./../../pictures/fight3.jpg";
+import img5 from "./../../pictures/fight4.jpg";
+
 import Header from "./Header";
 import SubHeader from "./SubHeader";
-
+const animeImages = [
+  img2,
+  img3,
+  img4,
+  img5
+]
 interface IDashboardGridHeaderProps {
   menuItems: Array<string>
 }
@@ -34,7 +40,7 @@ export const DashboardGridHeader:FC<IDashboardGridHeaderProps> = (props: IDashbo
 };
 
 const MappingBody = (props: any) => {
-  debugger;
+
 
   let NewsFeed = props.newsFeedItems.map((i: any, index: any) => {
     return (
@@ -44,7 +50,7 @@ const MappingBody = (props: any) => {
           <div className={styles.card}>
             <div>
               <img
-                src={img2}
+                src={animeImages[index % animeImages.length]}
                 alt="Avatar"
                 style={{ width: "25vw", height: "40vh" }}
               />

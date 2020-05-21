@@ -1,6 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css"
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import './spin.js.css'
 import Main from './routes/Main'
 
 ReactDOM.render(
