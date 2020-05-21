@@ -1,18 +1,13 @@
-import React from "react";
-import styles from "./../../views/dashboardGrid/DashBoardGrid.module.scss";
+import React, { FC } from "react"
+import styles from "./../../views/dashboardGrid/DashBoardGrid.module.scss"
 
-const Mapping = (props: any) => {
-  debugger;
-  let items;
-  items = props.menuItems.map((i: any) => {
-    return (
-      <>
-        <div className={styles.NavbargridItem}>{i}</div>
-      </>
-    );
-  });
+interface IMappingProps {
+  menuItems?: Array<string>
+}
 
-  return items;
+export const Mapping:FC<IMappingProps> = (props: IMappingProps) => {
+  const { menuItems } = props
+  if(!Array.isArray(menuItems) || menuItems.length === 0)
+    return null
+  return <>{menuItems.map((mappingItem) => <div key={mappingItem} className={styles.NavbargridItem}>{mappingItem}</div>)}</>
 };
-
-export default Mapping;

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { MainGridContainer } from "../views/mainGrid/MainGridContainer";
-import { DashBoardGridContainer } from "../views/dashboardGrid/DashBoardGridContainer";
-import BackgroundVideo from "../utils/backgroundVideo/BackgroundVideo";
-import styles from "./../utils/backgroundVideo/BackgroundVideo.module.scss";
+import { MainGridContainer } from "./../views/MainGrid/MainGridContainer";
+import { DashBoardGridContainer } from "./../views/dashboardGrid/DashBoardGridContainer";
+import BackgroundVideo from "../utils/BackgroundVideo/BackgroundVideo";
+import styles from "./../utils/BackgroundVideo/BackgroundVideo.module.scss";
 import "./Main.module.scss";
 
 const Main = () => {
-  const [whichGrid] = useState(false);
-
+  const [whichGrid, setWhichGrid] = useState(false);
+  console.dir(typeof setWhichGrid)
+  // is this like a Route type thing???
   if (whichGrid) {
     return (
       <>

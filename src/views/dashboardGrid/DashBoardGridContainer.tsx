@@ -1,16 +1,19 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./DashBoardGrid.module.scss";
 import BodyContainer from "../../containers/BodyContainer";
 import HeaderContainer from "../../containers/HeaderContainer";
-import img from "./../../pictures/img_avatar.png";
+// import img from "./../../pictures/img_avatar.png";
 import img2 from "./../../pictures/naruto1.jpg";
-import img3 from "./../../pictures/fight2.png";
-import img4 from "./../../pictures/fight3.jpg";
-import img5 from "./../../pictures/fight4.jpg";
+// import img3 from "./../../pictures/fight2.png";
+// import img4 from "./../../pictures/fight3.jpg";
+// import img5 from "./../../pictures/fight4.jpg";
 import Header from "./Header";
 import SubHeader from "./SubHeader";
 
-export const DashboardGridHeader = (props: any) => {
+interface IDashboardGridHeaderProps {
+  menuItems: Array<string>
+}
+export const DashboardGridHeader:FC<IDashboardGridHeaderProps> = (props: IDashboardGridHeaderProps) => {
   let chuck = 3;
   let frontItems = props.menuItems.slice(0, chuck);
   let hamburgerItems = props.menuItems.slice(

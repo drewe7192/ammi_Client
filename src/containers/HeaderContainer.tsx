@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { MainGridHeader } from "./../views/mainGrid/MainGridContainer";
-import { DashboardGridHeader } from "./../views/dashboardGrid/DashBoardGridContainer";
-import mockData from "./MockData.json";
+import React from "react"
+import { MainGridHeader } from "./../views/MainGrid/MainGridContainer"
+import { DashboardGridHeader } from "./../views/dashboardGrid/DashBoardGridContainer"
+import mockData from "./MockData.json"
 
 const whichGrid = (props: any) => {
   var displayGrid;
-  if (props.gridType == "dashBoardGrid") {
+  if (props.gridType === "dashBoardGrid") {
     displayGrid = (
       <DashboardGridHeader menuItems={mockData.results.Header.MenuItems} />
     );
-  } else if (props.gridType == "mainGrid") {
+  } else if (props.gridType === "mainGrid") {
     displayGrid = (
       <MainGridHeader menuItems={mockData.results.Header.MenuItems} />
     );

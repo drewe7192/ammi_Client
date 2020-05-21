@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./MainGrid.module.scss";
 import BodyContainer from "../../containers/BodyContainer";
 import HeaderContainer from "../../containers/HeaderContainer";
-import MenuDropdownComponent from "./../../utils/hamburger/MenuDropdownComponent";
-import Mapping from "./../../utils/mapping/Mapping";
+import MenuDropdownComponent from "./../../utils/Hamburger/MenuDropdownComponent"
+import { Mapping } from "./../../utils/mapping/Mapping";
 
 export const MainGridHeader = (props: any) => {
   let chuck = 3;

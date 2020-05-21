@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import styles from "./ModalComponent.module.scss";
+import React from "react"
+import styles from "./ModalComponent.module.scss"
 
 const ModalComponent = (props: any) => {
   const {
-    buttonLabel,
-    className,
+    // buttonLabel,
+    // className,
     toggle,
     isActive,
     menuItemsForHamburger,
