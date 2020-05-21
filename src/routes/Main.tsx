@@ -19,7 +19,7 @@ const Main = () => {
   })
 
 
-  const [whichGrid, setWhichGrid] = useState(true);
+  const [whichGrid, setWhichGrid] = useState(false);
   console.dir(typeof setWhichGrid)
   const [isLoading, setIsLoading] = useState(true)
 
