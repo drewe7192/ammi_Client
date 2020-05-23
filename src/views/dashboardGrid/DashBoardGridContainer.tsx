@@ -9,6 +9,7 @@ import img4 from "./../../pictures/fight3.jpg";
 import img5 from "./../../pictures/fight4.jpg";
 import Header from "./Header";
 import SubHeader from "./SubHeader";
+import { Loader } from "./../../utils/Loader";
 
 export const DashboardGridHeader = (props: any) => {
   let chuck = 3;
@@ -22,17 +23,13 @@ export const DashboardGridHeader = (props: any) => {
     <>
       <div className={styles.dashboardHeaderContainer}>
         <Header frontItems={frontItems} hamburgerItems={hamburgerItems} />
-        <div className={styles.dashboardSubheader}>
-          <SubHeader />
-        </div>
+        {/* <div className={styles.dashboardSubheader}> <SubHeader /> </div> */}
       </div>
     </>
   );
 };
 
 const MappingBody = (props: any) => {
-  debugger;
-
   let NewsFeed = props.newsFeedItems.map((i: any, index: any) => {
     return (
       <>
@@ -87,7 +84,11 @@ export const DashBoardGridContainer = () => {
         </div>
         <div className={styles.gridItem}>
           {" "}
-          <BodyContainer gridType="dashBoardGrid" />
+          <div className={styles.verticalCenter}>
+            <button>Centered Button</button>
+          </div>
+          <Loader isLoading={true} isTinted={true} />
+          {/* <BodyContainer gridType="dashBoardGrid" /> */}
         </div>
       </div>
     </>

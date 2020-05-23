@@ -146,3 +146,12 @@
   grid-template-columns: auto;
   grid-template-rows: 4vh 4vh;
 }
+
+.verticalCenter {
+  margin: 0;
+  position: relative;
+  top: 33vh;
+  // left: 50vw;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

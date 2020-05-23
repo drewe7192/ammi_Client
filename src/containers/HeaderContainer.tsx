@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MainGridHeader } from "./../views/mainGrid/MainGridContainer";
+import { MainGridHeader } from "../views/mainGrid/MainGridContainer";
 import { DashboardGridHeader } from "./../views/dashboardGrid/DashBoardGridContainer";
 import mockData from "./MockData.json";
 

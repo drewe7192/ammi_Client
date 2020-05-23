@@ -29,8 +29,8 @@ const Header = (props: any) => {
               height: "4vh",
             }}
           ></img>
-          <img src={svg2} style={{ width: "4vw", height: "4vh" }}></img>
-          <img src={svg3} style={{ width: "4vw", height: "4vh" }}></img>
+          {/* <img src={svg2} style={{ width: "4vw", height: "4vh" }}></img>
+          <img src={svg3} style={{ width: "4vw", height: "4vh" }}></img> */}
         </div>
       </div>
       <div className={styles.dashboardHeaderSection}>

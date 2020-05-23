@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MainGridBody } from "./../views/mainGrid/MainGridContainer";
+import { MainGridBody } from "../views/mainGrid/MainGridContainer";
 import { DashboardGridBody } from "./../views/dashboardGrid/DashBoardGridContainer";
 import mockData from "./MockData.json";
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./../../utils/hamburger/MenuDropdownComponent.module.scss";
 import { HamburgerSpring } from "react-animated-burgers";
-import ModalComponent from "./../modalComponent/ModalComponent";
+import ModalComponent from "../modalComponent/ModalComponent";
 
 const MenuDropdownComponent = (props) => {
   const { buttonLabel, className, menuItemsForHamburger } = props;
