@@ -1,20 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { MainGridContainer } from "../views/mainGrid/MainGridContainer";
-import { DashBoardGridContainer } from "../views/dashboardGrid/DashBoardGridContainer";
+import { HomePage } from "../views/homePage/HomePage";
+import { SpinnerPage } from "../views/spinnerPage/SpinnerPage";
+import { NewsPage } from "./../views/newsPage/NewsPage";
 import BackgroundVideo from "../utils/backgroundVideo/BackgroundVideo";
 import styles from "./../utils/backgroundVideo/BackgroundVideo.module.scss";
 import "./Main.module.scss";
 // import { Loader } from "./../utils/Loader";
-
 import Video from "./../videos/test1.mp4";
 
 const Main = () => {
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 30000);
-  });
-
   const [whichGrid, setWhichGrid] = useState(false);
   console.dir(typeof setWhichGrid);
   const [isLoading, setIsLoading] = useState(true);
@@ -35,7 +29,7 @@ const Main = () => {
         {whichGrid ? <MainGridContainer /> : <DashBoardGridContainer />}
       </div>
       </Loader> */}
-      <DashBoardGridContainer />
+      <SpinnerPage />
     </>
   );
 };

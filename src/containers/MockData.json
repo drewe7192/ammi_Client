@@ -2,7 +2,7 @@
   "results": {
     "Header": {
       "Title": "Ammi",
-      "MenuItems": ["Tv", "Movies", "Manga", "Login", "Settings", "another one"]
+      "MenuItems": []
     },
     "SubHeader": {
       "UserName": "Samantha",

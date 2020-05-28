@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import styles from "./MainGrid.module.scss";
+import styles from "./HomePage.module.scss";
 import BodyContainer from "../../containers/BodyContainer";
 import HeaderContainer from "../../containers/HeaderContainer";
 import MenuDropdownComponent from "../../utils/hamburger/MenuDropdownComponent";
 import Mapping from "../../utils/mapping/Mapping";
 
-export const MainGridHeader = (props: any) => {
+export const HomePageHeader = (props: any) => {
   let chuck = 3;
 
   let frontItems = props.menuItems.slice(0, chuck);
@@ -32,7 +32,7 @@ export const MainGridHeader = (props: any) => {
   );
 };
 
-export const MainGridBody = () => {
+export const HomePageBody = () => {
   return (
     <>
       <div className={styles.bodyGridContainer}>
@@ -64,16 +64,16 @@ export const MainGridBody = () => {
   );
 };
 
-export const MainGridContainer = () => {
+export const HomePage = () => {
   return (
     <>
       <div className={styles.gridContainer}>
         <div className={styles.gridItem}>
-          <HeaderContainer gridType={"mainGrid"} />
+          <HeaderContainer gridType={"homePage"} />
         </div>
         <div className={styles.gridItem}>
           {" "}
-          <BodyContainer gridType={"mainGrid"} />
+          <BodyContainer gridType={"homePage"} />
         </div>
       </div>
     </>

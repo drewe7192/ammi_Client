@@ -1,14 +1,14 @@
 .gridContainer {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 16vh 84vh;
-  background-color: #a0530f;
-  background: rgb(160, 83, 15);
-  background: linear-gradient(
-    0deg,
-    rgba(160, 83, 15, 0.8) 100%,
-    rgba(160, 83, 15, 0.8) 100%
-  );
+  grid-template-rows: 8vh 92vh;
+  background-color: #000000;
+  // background: rgb(160, 83, 15);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(160, 83, 15, 0.8) 100%,
+  //   rgba(160, 83, 15, 0.8) 100%
+  // );
 }
 .gridItem {
   font-size: 4vh;
@@ -37,7 +37,7 @@
     rgba(160, 83, 15, 0.1) 100%,
     rgba(160, 83, 15, 0.1) 100%
   );
-  color: white;
+  color: rgb(223, 119, 0);
   text-align: center;
 }
 
@@ -49,8 +49,8 @@
 
 .NavbargridContainer {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: 10vh;
+  grid-template-columns: auto;
+  grid-template-rows: 8vh;
 }
 .NavbargridItem {
   padding: 1vh;
@@ -60,7 +60,7 @@
 .dashboardHeaderContainer {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 8vh 8vh;
+  grid-template-rows: 8vh;
 }
 .dashboardHeader {
   display: grid;
@@ -71,15 +71,15 @@
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.dashboardSubheader {
-  display: grid;
-  grid-template-columns: 20.3vw 47.3vw 33.3vw;
-  grid-template-rows: 8vh;
-  background-color: rgb(32, 32, 32);
-  font-size: 3vh 3vw;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+// .dashboardSubheader {
+//   display: grid;
+//   grid-template-columns: 20.3vw 47.3vw 33.3vw;
+//   grid-template-rows: 8vh;
+//   background-color: rgb(32, 32, 32);
+//   font-size: 3vh 3vw;
+//   text-align: center;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -150,8 +150,18 @@
 .verticalCenter {
   margin: 0;
   position: relative;
-  top: 33vh;
+  top: 40vh;
   // left: 50vw;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  // background-color: rgba(255, 102, 0, 0.664);
+  color: rgb(121, 65, 12);
+  text-align: center;
 }

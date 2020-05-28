@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import { MainGridHeader } from "../views/mainGrid/MainGridContainer";
-import { DashboardGridHeader } from "./../views/dashboardGrid/DashBoardGridContainer";
+import { HomePageHeader } from "../views/homePage/HomePage";
+import { SpinnerPageHeader } from "../views/spinnerPage/SpinnerPage";
 import mockData from "./MockData.json";
 
 const whichGrid = (props: any) => {
   var displayGrid;
-  if (props.gridType == "dashBoardGrid") {
+  if (props.gridType == "spinnerPage") {
     displayGrid = (
-      <DashboardGridHeader menuItems={mockData.results.Header.MenuItems} />
+      <SpinnerPageHeader menuItems={mockData.results.Header.MenuItems} />
     );
-  } else if (props.gridType == "mainGrid") {
+  } else if (props.gridType == "homePage") {
     displayGrid = (
-      <MainGridHeader menuItems={mockData.results.Header.MenuItems} />
+      <HomePageHeader menuItems={mockData.results.Header.MenuItems} />
     );
   }
   return <>{displayGrid} </>;

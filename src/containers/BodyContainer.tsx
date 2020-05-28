@@ -1,22 +1,23 @@
 import React, { useState } from "react";
-import { MainGridBody } from "../views/mainGrid/MainGridContainer";
-import { DashboardGridBody } from "./../views/dashboardGrid/DashBoardGridContainer";
+import { HomePageBody } from "../views/homePage/HomePage";
+import { SpinnerPageBody } from "../views/spinnerPage/SpinnerPage";
+// import { NewsPageBody } from "./../views/newsPage/newsPage";
 import mockData from "./MockData.json";
 
-const whichGrid = (props: any) => {
-  var displayGrid;
-  if (props.gridType == "dashBoardGrid") {
-    displayGrid = (
-      <DashboardGridBody newsFeedItems={mockData.results.Body.NewsFeed} />
+const display = (props: any) => {
+  var displayPage;
+  if (props.whichPage == "spinnerPage") {
+    displayPage = (
+      <SpinnerPageBody newsFeedItems={mockData.results.Body.NewsFeed} />
     );
-  } else if (props.gridType == "mainGrid") {
-    displayGrid = <MainGridBody />;
+  } else if (props.whichPage == "homePage") {
+    displayPage = <HomePageBody />;
   }
-  return <>{displayGrid} </>;
+  return <>{displayPage} </>;
 };
 
-const BodyContainer = (gridType: any) => {
-  return <>{whichGrid(gridType)}</>;
+const BodyContainer = (whichPage: any) => {
+  return <>{display(whichPage)}</>;
 };
 
 export default BodyContainer;

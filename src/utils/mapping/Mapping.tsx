@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./../../views/dashboardGrid/DashBoardGrid.module.scss";
+import styles from "./../../views/spinnerPage/SpinnerPage.module.scss";
 
 const Mapping = (props: any) => {
   let items;
