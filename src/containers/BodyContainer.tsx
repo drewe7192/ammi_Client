@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import { HomePageBody } from "../views/homePage/HomePage";
 import { SpinnerPageBody } from "../views/spinnerPage/SpinnerPage";
-// import { NewsPageBody } from "./../views/newsPage/newsPage";
+import { NewsPageBodyMobile } from "../views/newsPage/NewsPageMobile";
+import { NewsPageBodyDesktop } from "../views/newsPage/NewsPageDesktop";
 import mockData from "./MockData.json";
+
+const NewsPage = (props: any) => {
+  return props.isMobile ? <NewsPageBodyMobile /> : <NewsPageBodyDesktop />;
+};
 
 const display = (props: any) => {
   var displayPage;
@@ -12,12 +17,14 @@ const display = (props: any) => {
     );
   } else if (props.whichPage == "homePage") {
     displayPage = <HomePageBody />;
+  } else if (props.whichPage == "newsPage") {
+    displayPage = NewsPage(props);
   }
   return <>{displayPage} </>;
 };
 
-const BodyContainer = (whichPage: any) => {
-  return <>{display(whichPage)}</>;
+const BodyContainer = (props: any) => {
+  return <>{display(props)}</>;
 };
 
 export default BodyContainer;

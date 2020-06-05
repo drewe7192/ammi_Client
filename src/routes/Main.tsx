@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { HomePage } from "../views/homePage/HomePage";
 import { SpinnerPage } from "../views/spinnerPage/SpinnerPage";
-import { NewsPage } from "./../views/newsPage/NewsPage";
+import NewsPage from "../views/newsPage/NewsPage";
 import BackgroundVideo from "../utils/backgroundVideo/BackgroundVideo";
 import styles from "./../utils/backgroundVideo/BackgroundVideo.module.scss";
 import "./Main.module.scss";
@@ -29,7 +29,7 @@ const Main = () => {
         {whichGrid ? <MainGridContainer /> : <DashBoardGridContainer />}
       </div>
       </Loader> */}
-      <SpinnerPage />
+      <NewsPage />
     </>
   );
 };

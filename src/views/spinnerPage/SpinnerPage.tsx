@@ -20,40 +20,38 @@ export const SpinnerPageHeader = (props: any) => {
 
   return (
     <>
-      <div className={styles.dashboardHeaderContainer}>
-        <div className={styles.dashboardHeader}>
-          <div className={styles.dashboardHeaderSection}>
-            <div
-              style={{
-                float: "left",
-                fontSize: "4vh",
-              }}
-            >
-              Ammi
-            </div>
-            <div style={{ padding: "1vh" }}>
-              {/* <img
+      <div className={styles.dashboardHeader}>
+        <div className={styles.dashboardHeaderSection}>
+          <div
+            style={{
+              float: "left",
+              fontSize: "4vh",
+            }}
+          >
+            Ammi
+          </div>
+          <div style={{ padding: "1vh" }}>
+            {/* <img
             src={svg}
             style={{
               width: "4vw",
               height: "4vh",
             }}
           ></img> */}
-              {/* <img src={svg2} style={{ width: "4vw", height: "4vh" }}></img>
+            {/* <img src={svg2} style={{ width: "4vw", height: "4vh" }}></img>
           <img src={svg3} style={{ width: "4vw", height: "4vh" }}></img> */}
-            </div>
           </div>
-          <div className={styles.dashboardHeaderSection}>
-            <input
-              type="search"
-              id="myInput"
-              placeholder="Search for Anime..."
-              title="Type in a name"
-            ></input>
-          </div>
-          <div className={styles.dashboardHeaderSection}>
-            <MenuDropdownComponent menuItemsForHamburger={hamburgerItems} />
-          </div>
+        </div>
+        <div className={styles.dashboardHeaderSection}>
+          <input
+            type="search"
+            id="myInput"
+            placeholder="Search for Anime..."
+            title="Type in a name"
+          ></input>
+        </div>
+        <div className={styles.dashboardHeaderSection}>
+          <MenuDropdownComponent menuItemsForHamburger={hamburgerItems} />
         </div>
       </div>
     </>
