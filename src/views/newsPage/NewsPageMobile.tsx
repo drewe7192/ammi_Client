@@ -5,7 +5,7 @@ import HeaderContainer from "../../containers/HeaderContainer";
 import BodyContainer from "../../containers/BodyContainer";
 import img from "./../../assets/pictures/fight2.png";
 
-export const NewsPageHeader = (props: any) => {
+export const NewsPageHeaderMobile = (props: any) => {
   let chuck = 3;
   let frontItems = props.menuItems.slice(0, chuck);
   let hamburgerItems = props.menuItems.slice(
@@ -15,8 +15,8 @@ export const NewsPageHeader = (props: any) => {
 
   return (
     <>
-      <div className={styles.dashboardHeader}>
-        <div className={styles.dashboardHeaderSection}>
+      <div className={styles.mobileHeader}>
+        <div className={styles.mobileHeaderSection}>
           <div
             style={{
               float: "left",
@@ -37,7 +37,7 @@ export const NewsPageHeader = (props: any) => {
           <img src={svg3} style={{ width: "4vw", height: "4vh" }}></img> */}
           </div>
         </div>
-        <div className={styles.dashboardHeaderSection}>
+        <div className={styles.mobileHeaderSection}>
           <input
             type="search"
             id="myInput"
@@ -45,7 +45,7 @@ export const NewsPageHeader = (props: any) => {
             title="Type in a name"
           ></input>
         </div>
-        <div className={styles.dashboardHeaderSection}>
+        <div className={styles.mobileHeaderSection}>
           <MenuDropdownComponent menuItemsForHamburger={hamburgerItems} />
         </div>
       </div>
@@ -85,7 +85,7 @@ export const NewsPageMobile = () => {
     <>
       <div className={styles.gridContainer}>
         <div className={styles.gridItem}>
-          <HeaderContainer whichPage="newsPage" />
+          <HeaderContainer whichPage="newsPage" isMobile={true} />
         </div>
         <div className={styles.gridItem}>
           <BodyContainer whichPage="newsPage" isMobile={true} />

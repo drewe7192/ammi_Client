@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 import { HomePageHeader } from "../views/homePage/HomePage";
 import { SpinnerPageHeader } from "../views/spinnerPage/SpinnerPage";
-import { NewsPageHeader } from "../views/newsPage/NewsPageMobile";
+import { NewsPageHeaderMobile } from "../views/newsPage/NewsPageMobile";
+import { NewsPageHeaderDesktop } from "../views/newsPage/NewsPageDesktop";
 import mockData from "./MockData.json";
+import { prependOnceListener } from "cluster";
+
+const newsPage = (props: any) => {
+  return props.isMobile ? (
+    <NewsPageHeaderMobile menuItems={mockData.results.Header.MenuItems} />
+  ) : (
+    <NewsPageHeaderDesktop menuItems={mockData.results.Header.MenuItems} />
+  );
+};
 
 const whichGrid = (props: any) => {
   var displayGrid;
@@ -15,15 +25,13 @@ const whichGrid = (props: any) => {
       <HomePageHeader menuItems={mockData.results.Header.MenuItems} />
     );
   } else if (props.whichPage == "newsPage") {
-    displayGrid = (
-      <NewsPageHeader menuItems={mockData.results.Header.MenuItems} />
-    );
+    displayGrid = newsPage(props);
   }
   return <>{displayGrid} </>;
 };
 
-const HeaderContainer = (whichPage: any) => {
-  return <>{whichGrid(whichPage)}</>;
+const HeaderContainer = (props: any) => {
+  return <>{whichGrid(props)}</>;
 };
 
 export default HeaderContainer;

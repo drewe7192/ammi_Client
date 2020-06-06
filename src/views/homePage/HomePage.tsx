@@ -3,7 +3,7 @@ import styles from "./HomePage.module.scss";
 import BodyContainer from "../../containers/BodyContainer";
 import HeaderContainer from "../../containers/HeaderContainer";
 import MenuDropdownComponent from "../../utils/hamburger/MenuDropdownComponent";
-import Mapping from "../../utils/mapping/Mapping";
+import Mapping from "../../utils/Mapping";
 
 export const HomePageHeader = (props: any) => {
   let chuck = 3;

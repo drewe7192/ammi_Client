@@ -92,15 +92,15 @@
 //   padding-right: 10vh;
 // }
 
-// .NavbargridContainer {
-//   display: grid;
-//   grid-template-columns: auto;
-//   grid-template-rows: 8vh;
-// }
-// .NavbargridItem {
-//   padding: 1vh;
-//   text-align: center;
-// }
+.NavbargridContainer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 8vh;
+}
+.NavbargridItem {
+  padding: 1vh;
+  text-align: center;
+}
 
 // .card {
 //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
