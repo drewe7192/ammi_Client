@@ -1,7 +1,7 @@
 .gridContainer {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 8vh 92vh;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 100vh;
   background-color: #000000;
 }
 .gridItem {
@@ -10,19 +10,26 @@
   overflow-x: hidden;
 }
 
+.gridItem2 {
+  font-size: 4vh;
+  text-align: center;
+  overflow-x: hidden;
+  background-color: #9b470f;
+}
+
 //------------------------------------------------------------------------------------------------------
 
-.dashboardHeader {
+.desktopHeader {
   display: grid;
-  grid-template-columns: 20.3vw 47.3vw 33.3vw;
-  grid-template-rows: 8vh;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   background-color: #9b470f;
   font-size: 3vh 3vw;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.dashboardHeaderSection {
+.desktopHeaderSection {
   padding: 1vh;
   font-size: 3vh;
   text-align: center;
@@ -151,3 +158,26 @@
 //   grid-template-columns: auto;
 //   grid-template-rows: 4vh 4vh;
 // }
+
+//-------------------------------------------- MOBILE ---------------------------------------//
+
+@media (max-width: 766px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 8vh 92vh;
+    background-color: #000000;
+  }
+  .gridItem {
+    font-size: 4vh;
+    text-align: center;
+    overflow-x: hidden;
+
+    .gridItem2 {
+      font-size: 4vh;
+      text-align: center;
+      overflow-x: hidden;
+      background-color: #9b470f;
+    }
+  }
+}

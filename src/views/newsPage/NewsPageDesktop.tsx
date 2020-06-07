@@ -3,6 +3,7 @@ import styles from "./NewsPage.module.scss";
 import HeaderContainer from "../../containers/HeaderContainer";
 import BodyContainer from "../../containers/BodyContainer";
 import Mapping from "./../../utils/Mapping";
+import img from "./../../assets/pictures/naruto1.jpg";
 
 export const NewsPageHeaderDesktop = (props: any) => {
   let chuck = 3;
@@ -15,10 +16,10 @@ export const NewsPageHeaderDesktop = (props: any) => {
   return (
     <>
       <div className={styles.desktopHeader}>
-        <Mapping menuItems={props.menuItems} whichPage={"newsPage"} />
-        {/* <div className={styles.desktopHeaderSection}>Ammi</div>
-        <div className={styles.desktopHeaderSection}>vfsdgvdfgfdgdfgf</div>
-        <div className={styles.desktopHeaderSection}>ghfghghg</div> */}
+        <div className={styles.desktopHeaderSection}>Ammi</div>
+        <div className={styles.desktopHeaderSection}>
+          <Mapping menuItems={props.menuItems} whichPage={"newsPage"} />
+        </div>
       </div>
     </>
   );
@@ -28,19 +29,40 @@ export const NewsPageBodyDesktop = (props: any) => {
   return (
     <>
       <div className={styles.body}>
-        <div className={styles.bodyItem}>1</div>
         <div className={styles.bodyItem}>
           <div className={styles.card}>
-            {/* <img
+            <img
               src={img}
               alt="Avatar"
               style={{ width: "25vw", height: "25vh" }}
-            ></img> */}
+            ></img>
             <div className={styles.container}>
               <h4>
                 <b>John Doe</b>
               </h4>
               <p>Architect & Engineer</p>
+            </div>
+          </div>
+        </div>
+        <div className={styles.bodyItem2}>
+          <div className={styles.bodyItem2Columns}>
+            <div className={styles.card}>
+              <div className={styles.container}>
+                <h4>
+                  <b>John Doe</b>
+                </h4>
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.bodyItem2Columns}>
+            <div className={styles.card}>
+              <div className={styles.container}>
+                <h4>
+                  <b>John Doe</b>
+                </h4>
+                <p>Architect & Engineer</p>
+              </div>
             </div>
           </div>
         </div>

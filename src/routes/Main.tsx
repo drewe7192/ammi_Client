@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import HomePage from "../views/homePage/HomePage";
-import { SpinnerPage } from "../views/spinnerPage/SpinnerPage";
+import SpinnerPage from "../views/spinnerPage/SpinnerPage";
 import NewsPage from "../views/newsPage/NewsPage";
 import BackgroundVideo from "../utils/backGroundVideo/BackgroundVideo";
 import styles from "./../utils/backgroundVideo/BackgroundVideo.module.scss";
 import "./Main.module.scss";
 // import { Loader } from "./../utils/Loader";
 import Video from "./../videos/test1.mp4";
-import { homedir } from "os";
 
 const Main = () => {
   const [whichGrid, setWhichGrid] = useState(false);
@@ -30,7 +29,7 @@ const Main = () => {
         {whichGrid ? <MainGridContainer /> : <DashBoardGridContainer />}
       </div>
       </Loader> */}
-      <HomePage />
+      <SpinnerPage />
     </>
   );
 };

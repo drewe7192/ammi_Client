@@ -38,12 +38,12 @@ export const NewsPageHeaderMobile = (props: any) => {
           </div>
         </div>
         <div className={styles.mobileHeaderSection}>
-          <input
+          {/* <input
             type="search"
             id="myInput"
             placeholder="Search for Anime..."
             title="Type in a name"
-          ></input>
+          ></input> */}
         </div>
         <div className={styles.mobileHeaderSection}>
           <MenuDropdownComponent menuItemsForHamburger={hamburgerItems} />
@@ -57,9 +57,13 @@ export const NewsPageBodyMobile = (props: any) => {
   return (
     <>
       <div className={styles.body}>
-        <div className={styles.bodyItem}>1</div>
         <div className={styles.bodyItem}>
           <div className={styles.card}>
+            <img
+              src={img}
+              alt="Avatar"
+              style={{ width: "25vw", height: "25vh" }}
+            ></img>
             <div className={styles.container}>
               <h4>
                 <b>John Doe</b>
@@ -68,13 +72,28 @@ export const NewsPageBodyMobile = (props: any) => {
             </div>
           </div>
         </div>
-        <div className={styles.bodyItem}>3</div>
-        <div className={styles.bodyItem}>4</div>
-        <div className={styles.bodyItem}>5</div>
-        <div className={styles.bodyItem}>6</div>
-        <div className={styles.bodyItem}>7</div>
-        <div className={styles.bodyItem}>8</div>
-        <div className={styles.bodyItem}>9</div>
+        <div className={styles.bodyItem2}>
+          <div className={styles.bodyItem2Columns}>
+            <div className={styles.card}>
+              <div className={styles.container}>
+                <h4>
+                  <b>John Doe</b>
+                </h4>
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.bodyItem2Columns}>
+            <div className={styles.card}>
+              <div className={styles.container}>
+                <h4>
+                  <b>John Doe</b>
+                </h4>
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
