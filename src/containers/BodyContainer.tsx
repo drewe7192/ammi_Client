@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { HomePageBody } from "../views/homePage/HomePage";
+import { HomePageBodyMobile } from "../views/homePage/HomePageMobile";
+import { HomePageBodyDesktop } from "../views/homePage/HomePageDesktop";
 import { SpinnerPageBody } from "../views/spinnerPage/SpinnerPage";
 import { NewsPageBodyMobile } from "../views/newsPage/NewsPageMobile";
 import { NewsPageBodyDesktop } from "../views/newsPage/NewsPageDesktop";
@@ -9,6 +10,10 @@ const NewsPage = (props: any) => {
   return props.isMobile ? <NewsPageBodyMobile /> : <NewsPageBodyDesktop />;
 };
 
+const homePage = (props: any) => {
+  return props.isMobile ? <HomePageBodyMobile /> : <HomePageBodyDesktop />;
+};
+
 const display = (props: any) => {
   var displayPage;
   if (props.whichPage == "spinnerPage") {
@@ -16,7 +21,7 @@ const display = (props: any) => {
       <SpinnerPageBody newsFeedItems={mockData.results.Body.NewsFeed} />
     );
   } else if (props.whichPage == "homePage") {
-    displayPage = <HomePageBody />;
+    displayPage = homePage(props);
   } else if (props.whichPage == "newsPage") {
     displayPage = NewsPage(props);
   }

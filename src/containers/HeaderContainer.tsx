@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { HomePageHeader } from "../views/homePage/HomePage";
+import { HomePageHeaderMobile } from "../views/homePage/HomePageMobile";
+import { HomePageHeaderDesktop } from "../views/homePage/HomePageDesktop";
 import { SpinnerPageHeader } from "../views/spinnerPage/SpinnerPage";
 import { NewsPageHeaderMobile } from "../views/newsPage/NewsPageMobile";
 import { NewsPageHeaderDesktop } from "../views/newsPage/NewsPageDesktop";
@@ -14,6 +15,10 @@ const newsPage = (props: any) => {
   );
 };
 
+const homePage = (props: any) => {
+  return props.isMobile ? <HomePageHeaderMobile /> : <HomePageHeaderDesktop />;
+};
+
 const whichGrid = (props: any) => {
   var displayGrid;
   if (props.whichPage == "spinnerPage") {
@@ -21,9 +26,7 @@ const whichGrid = (props: any) => {
       <SpinnerPageHeader menuItems={mockData.results.Header.MenuItems} />
     );
   } else if (props.whichPage == "homePage") {
-    displayGrid = (
-      <HomePageHeader menuItems={mockData.results.Header.MenuItems} />
-    );
+    displayGrid = homePage(props);
   } else if (props.whichPage == "newsPage") {
     displayGrid = newsPage(props);
   }

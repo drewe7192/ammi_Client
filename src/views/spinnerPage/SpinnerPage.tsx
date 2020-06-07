@@ -8,7 +8,7 @@ import img3 from "./../../assets/pictures/fight2.png";
 import img4 from "./../../assets/pictures/fight3.jpg";
 import img5 from "./../../assets/pictures/fight4.jpg";
 import { Loader } from "../../utils/Loader";
-import MenuDropdownComponent from "./../../utils/hamburger/MenuDropdownComponent";
+import MenuDropdownComponent from "../../utils/hamburger/MenuDropdownComponent";
 
 export const SpinnerPageHeader = (props: any) => {
   let chuck = 3;
