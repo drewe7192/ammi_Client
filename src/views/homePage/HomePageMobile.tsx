@@ -17,15 +17,10 @@ export const HomePageHeaderMobile = (props: any) => {
   return (
     <>
       {" "}
-      <div className={styles.mainGridHeader}>
-        <div className={styles.title}>Ammi</div>
-        <div className={styles.header}>
-          <div className={styles.NavbargridContainer}>
-            <Mapping menuItems={frontItems} />
-            <div>
-              <MenuDropdownComponent menuItemsForHamburger={hamburgerItems} />
-            </div>
-          </div>
+      <div className={styles.mobileHeader}>
+        <div className={styles.mobileHeaderItems}>Ammi</div>
+        <div className={styles.mobileHeaderItems}>
+          <MenuDropdownComponent menuItemsForHamburger={hamburgerItems} />
         </div>
       </div>
     </>
@@ -35,8 +30,8 @@ export const HomePageHeaderMobile = (props: any) => {
 export const HomePageBodyMobile = () => {
   return (
     <>
-      <div className={styles.bodyGridContainer}>
-        <div className={styles.bodyGridItem}>
+      <div className={styles.mobileBody}>
+        <div className={styles.mobileBodyItem}>
           <hr style={{ width: "70%" }} />
           <div style={{ paddingTop: "4vh" }}>
             <div

@@ -7,6 +7,7 @@ import styles from "./../utils/backgroundVideo/BackgroundVideo.module.scss";
 import "./Main.module.scss";
 // import { Loader } from "./../utils/Loader";
 import Video from "./../videos/test1.mp4";
+import { homedir } from "os";
 
 const Main = () => {
   const [whichGrid, setWhichGrid] = useState(false);
@@ -29,7 +30,7 @@ const Main = () => {
         {whichGrid ? <MainGridContainer /> : <DashBoardGridContainer />}
       </div>
       </Loader> */}
-      <NewsPage />
+      <HomePage />
     </>
   );
 };

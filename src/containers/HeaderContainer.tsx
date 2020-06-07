@@ -16,7 +16,11 @@ const newsPage = (props: any) => {
 };
 
 const homePage = (props: any) => {
-  return props.isMobile ? <HomePageHeaderMobile /> : <HomePageHeaderDesktop />;
+  return props.isMobile ? (
+    <HomePageHeaderMobile menuItems={mockData.results.Header.MenuItems} />
+  ) : (
+    <HomePageHeaderDesktop menuItems={mockData.results.Header.MenuItems} />
+  );
 };
 
 const whichGrid = (props: any) => {
