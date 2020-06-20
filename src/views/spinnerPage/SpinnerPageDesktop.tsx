@@ -54,17 +54,20 @@ export const SpinnerPageHeaderDesktop = (props: any) => {
   return (
     <>
       <div className={styles.desktopHeader}>
-        <div className={styles.desktopHeaderSection}>1</div>
         <div className={styles.desktopHeaderSection}>
-          vzdfvdfv
-          {/* <input
-            type="search"
-            id="myInput"
-            placeholder="Search for Anime..."
-            title="Type in a name"
-          ></input> */}
+          {" "}
+          <img
+            src={img1}
+            alt="Avatar"
+            style={{ width: "18vw", height: "40vh" }}
+          />
         </div>
-        <div className={styles.desktopHeaderSection}>gsdfgdfgdfgd</div>
+        <div className={styles.desktopHeaderSection}>Title of show</div>
+        <div className={styles.desktopHeaderSection}>
+          quick description quick description quick descriptionquick
+          descriptionquick descriptionquick description
+        </div>
+        <div className={styles.desktopHeaderSection}>44 memebers watch</div>
       </div>
     </>
   );

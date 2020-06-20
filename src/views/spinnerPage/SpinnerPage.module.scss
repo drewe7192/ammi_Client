@@ -22,12 +22,12 @@
 
 .desktopHeader {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 20vw;
   grid-template-rows: auto;
   background-color: #9b470f;
   font-size: 3vh 3vw;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .desktopHeaderSection {
@@ -36,28 +36,21 @@
   text-align: center;
 }
 
-.dashboardHeaderSection input[type="search"] {
-  padding: 2vh;
-  width: 46vw;
-  height: 5vh;
-  border: none;
-  font-size: 3vh 3vw;
-  border-radius: 20px;
-  outline: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+// .dashboardHeaderSection input[type="search"] {
+//   padding: 2vh;
+//   width: 46vw;
+//   height: 5vh;
+//   border: none;
+//   font-size: 3vh 3vw;
+//   border-radius: 20px;
+//   outline: none;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// }
 
 //-----------------------------------------------------------------------------------------------------//
 
-.verticalCenter {
-  position: absolute;
-}
 .buttonCenter {
-  margin: 0;
-  top: 40vh;
-  left: 50vw;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translate(0px, 310px);
 }
 
 .footer {
