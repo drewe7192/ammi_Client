@@ -102,7 +102,7 @@ export const SpinnerPageBodyMobile = (props: any) => {
       <div className={styles.verticalCenter}>
         <button>Centered Button</button>
       </div>
-      <Loader isLoading={true} isTinted={true} />
+      <Loader isLoading={true} isTinted={true} isMobile={true} />
       <div className={styles.footer}>
         <h6>#afdsf #hgh #hgfhfg #hg g #hgfhgfh #hgfh #gnfgg #hgfh #gnfgg</h6>
       </div>

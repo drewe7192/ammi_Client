@@ -4,6 +4,8 @@ import BodyContainer from "../../containers/BodyContainer";
 import HeaderContainer from "../../containers/HeaderContainer";
 import MenuDropdownComponent from "../../utils/hamburger/MenuDropdownComponent";
 import Mapping from "../../utils/Mapping";
+import BackgroundVideo from "./../../utils/backGroundVideo/BackgroundVideo";
+import Video from "./../../assets/videos/test1.mp4";
 
 export const HomePageHeaderDesktop = (props: any) => {
   let chuck = 3;
@@ -67,12 +69,12 @@ export const HomePageBodyDesktop = () => {
 export const HomePageDesktop = () => {
   return (
     <>
+      {/* <BackgroundVideo /> */}
       <div className={styles.gridContainer}>
         <div className={styles.gridItem}>
           <HeaderContainer whichPage={"homePage"} />
         </div>
         <div className={styles.gridItem}>
-          {" "}
           <BodyContainer whichPage={"homePage"} />
         </div>
       </div>

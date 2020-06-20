@@ -1,0 +1,10 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 100vh;
+}
+.gridItem {
+  // font-size: 4vh;
+  text-align: center;
+  overflow-x: hidden;
+}

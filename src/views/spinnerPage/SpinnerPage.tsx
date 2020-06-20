@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { SpinnerPageDesktop } from "./SpinnerPageDesktop";
 import { SpinnerPageMobile } from "./SpinnerPageMobile";
 import useViewport from "./../../utils/useViewPort";

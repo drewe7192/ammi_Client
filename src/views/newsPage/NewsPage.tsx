@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { NewsPageDesktop } from "./NewsPageDesktop";
 import { NewsPageMobile } from "./NewsPageMobile";
 import useViewport from "./../../utils/useViewPort";

@@ -4,6 +4,7 @@ import { Spinner } from "spin.js";
 interface ILoaderProps {
   isLoading: boolean;
   isTinted?: boolean;
+  isMobile?: boolean;
   // children: ReactNode;
 }
 export const Loader: FC<ILoaderProps> = (props: ILoaderProps) => {
@@ -14,7 +15,6 @@ export const Loader: FC<ILoaderProps> = (props: ILoaderProps) => {
 
   useEffect(() => {
     const _htmlSpanReference = spanRef.current;
-
     if (hasMounted === false) {
       setHasMounted(true);
       if (
@@ -38,7 +38,7 @@ export const Loader: FC<ILoaderProps> = (props: ILoaderProps) => {
           zIndex: 2e9, // The z-index (defaults to 2000000000)
           className: "spinner", // The CSS class to assign to the spinner
           top: "50vh", // Top position relative to parent
-          left: "50vw", // Left position relative to parent
+          left: isMobile ? "50vw" : "60vw", // Left position relative to parent
           shadow: "0 0 1px transparent", // Box-shadow for the lines
           position: "absolute", // Element positioning
         });
@@ -51,7 +51,7 @@ export const Loader: FC<ILoaderProps> = (props: ILoaderProps) => {
   }, []);
 
   // const { isLoading, children } = props;
-  const { isLoading } = props;
+  const { isLoading, isMobile } = props;
   // if (!isLoading) return <>{children}</>;
 
   let isTinted = props.isTinted || false;

@@ -5,8 +5,18 @@ import { SpinnerPageHeaderMobile } from "../views/spinnerPage/SpinnerPageMobile"
 import { SpinnerPageHeaderDesktop } from "../views/spinnerPage/SpinnerPageDesktop";
 import { NewsPageHeaderMobile } from "../views/newsPage/NewsPageMobile";
 import { NewsPageHeaderDesktop } from "../views/newsPage/NewsPageDesktop";
+import { ProfilePageHeaderMobile } from "../views/profilePage/ProfilePageMobile";
+import { ProfilePageHeaderDesktop } from "../views/profilePage/ProfilePageDesktop";
 import mockData from "./MockData.json";
 import { prependOnceListener } from "cluster";
+
+const profilePage = (props: any) => {
+  return props.isMobile ? (
+    <ProfilePageHeaderDesktop menuItems={mockData.results.Header.MenuItems} />
+  ) : (
+    <ProfilePageHeaderMobile menuItems={mockData.results.Header.MenuItems} />
+  );
+};
 
 const newsPage = (props: any) => {
   return props.isMobile ? (
@@ -40,6 +50,8 @@ const whichGrid = (props: any) => {
     displayGrid = homePage(props);
   } else if (props.whichPage == "newsPage") {
     displayGrid = newsPage(props);
+  } else if (props.whichPage == "profilePage") {
+    displayGrid = profilePage(props);
   }
   return <>{displayGrid} </>;
 };

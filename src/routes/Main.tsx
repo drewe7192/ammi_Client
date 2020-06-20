@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import HomePage from "../views/homePage/HomePage";
 import SpinnerPage from "../views/spinnerPage/SpinnerPage";
+import ProfilePage from "./../views/profilePage/ProfilePage";
 import NewsPage from "../views/newsPage/NewsPage";
 import BackgroundVideo from "../utils/backGroundVideo/BackgroundVideo";
 import styles from "./../utils/backgroundVideo/BackgroundVideo.module.scss";
