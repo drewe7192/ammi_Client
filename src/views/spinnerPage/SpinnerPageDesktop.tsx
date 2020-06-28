@@ -4,6 +4,7 @@ import BodyContainer from "../../containers/BodyContainer";
 import HeaderContainer from "../../containers/HeaderContainer";
 import img1 from "./../../assets/pictures/naruto1.jpg";
 import { Loader } from "../../utils/Loader";
+import { Tabs } from "./../../utils/tabs/Tabs";
 
 // const MappingBody = (props: any) => {
 //   let NewsFeed = props.newsFeedItems.map((i: any, index: any) => {
@@ -43,6 +44,14 @@ import { Loader } from "../../utils/Loader";
 //   return NewsFeed;
 // };
 
+const tabHandler = (e: any) => {
+  return (
+    <>
+      <Tabs whichTab={e.currentTarget.id} />
+    </>
+  );
+};
+
 export const SpinnerPageHeaderDesktop = (props: any) => {
   let chuck = 3;
   let frontItems = props.menuItems.slice(0, chuck);
@@ -54,20 +63,15 @@ export const SpinnerPageHeaderDesktop = (props: any) => {
   return (
     <>
       <div className={styles.desktopHeader}>
-        <div className={styles.desktopHeaderSection}>
-          {" "}
-          <img
-            src={img1}
-            alt="Avatar"
-            style={{ width: "18vw", height: "40vh" }}
-          />
+        <div>
+          <h2 style={{ color: "orange" }}>AMMI</h2>
         </div>
-        <div className={styles.desktopHeaderSection}>Title of show</div>
-        <div className={styles.desktopHeaderSection}>
-          quick description quick description quick descriptionquick
-          descriptionquick descriptionquick description
-        </div>
-        <div className={styles.desktopHeaderSection}>44 memebers watch</div>
+        <div className={styles.desktopHeaderSection}>show</div>
+        <div className={styles.desktopHeaderSection}> watch</div>
+        <div className={styles.desktopHeaderSection}>show</div>
+        <div className={styles.desktopHeaderSection}> watch</div>
+        <div className={styles.desktopHeaderSection}>show</div>
+        <div className={styles.desktopHeaderSection}> watch</div>
       </div>
     </>
   );
@@ -76,8 +80,16 @@ export const SpinnerPageHeaderDesktop = (props: any) => {
 export const SpinnerPageBodyDesktop = (props: any) => {
   return (
     <>
-      <button className={styles.buttonCenter}>Centered Button</button>
-      <Loader isLoading={true} isTinted={true} isMobile={false} />
+      <div className="tab">
+        <button id="tab1" value="tab1" onClick={(e) => tabHandler(e)}>
+          London
+        </button>
+        <button>Paris</button>
+        <button>Tokyo</button>
+      </div>
+
+      {/* <button className={styles.buttonCenter}>Centered Button</button>
+      <Loader isLoading={true} isTinted={true} isMobile={false} /> */}
 
       <div className={styles.footer}>
         <h6>#afdsf #hgh #hgfhfg #hg g #hgfhgfh #hgfh #gnfgg #hgfh #gnfgg</h6>
@@ -98,10 +110,10 @@ export const SpinnerPageDesktop = () => {
   return (
     <>
       <div className={styles.gridContainer}>
-        <div className={styles.gridItem2}>
+        <div className={styles.gridItem1}>
           <HeaderContainer whichPage="spinnerPage" />
         </div>
-        <div className={styles.gridItem}>
+        <div className={styles.gridItem2}>
           <BodyContainer whichPage="spinnerPage" />
         </div>
       </div>

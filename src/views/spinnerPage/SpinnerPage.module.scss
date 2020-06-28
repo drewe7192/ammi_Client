@@ -1,30 +1,31 @@
 .gridContainer {
   display: grid;
-  grid-template-columns: 20vw 80vw;
+  grid-template-columns: 10vw 90vw;
   grid-template-rows: 100vh;
-  background-color: #000000;
+  background-color: #26282b;
 }
-.gridItem {
+
+.gridItem1 {
   font-size: 4vh;
   text-align: center;
   overflow-x: hidden;
+  background-color: #26282b;
+  z-index: 1;
 }
 
 .gridItem2 {
+  background: linear-gradient(45deg, #090a0c, transparent);
   font-size: 4vh;
   text-align: center;
   overflow-x: hidden;
-  background-color: #9b470f;
-  z-index: 1;
 }
 
 //------------------------------------------------------------------------------------------------------
 
 .desktopHeader {
   display: grid;
-  grid-template-columns: 20vw;
   grid-template-rows: auto;
-  background-color: #9b470f;
+  background-color: #26282b;
   font-size: 3vh 3vw;
   text-align: center;
   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -34,6 +35,10 @@
   padding: 1vh;
   font-size: 3vh;
   text-align: center;
+}
+
+.desktopHeaderSection:hover {
+  background: red;
 }
 
 // .dashboardHeaderSection input[type="search"] {
